@@ -1,18 +1,18 @@
 {
   "name": "MonitorCpuUsage",
   "version": "0.1.0",
-  "summary": "A short description of MonitorCpuUsage.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/815009254@qq.com/MonitorCpuUsage",
+  "summary": "Monitoring CPU usage and stack information in app of MonitorCpuUsage.",
+  "description": "TODO: Monitor CPU usage in app, stack information of threads used by high CPU, and display of polygraph.",
+  "homepage": "https://github.com/HeXiuLian/MonitorCpuUsageProject",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "815009254@qq.com": "xiulian.he@gmail.com"
+    "HeXiuLian": "815009254@qq.com"
   },
   "source": {
-    "git": "https://github.com/815009254@qq.com/MonitorCpuUsage.git",
+    "git": "https://github.com/HeXiuLian/MonitorCpuUsageProject.git",
     "tag": "0.1.0"
   },
   "platforms": {

@@ -7,8 +7,11 @@
 //
 
 #import "XLMonitorBrokenLineView.h"
+#import <iOS_Echarts/iOS-Echarts.h>
 
 @interface XLMonitorBrokenLineView ()
+
+@property (nonatomic, strong) PYZoomEchartsView *kEchartView;
 
 @property (nonatomic, strong) UITextView  *selectText;
 
