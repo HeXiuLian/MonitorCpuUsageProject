@@ -32,9 +32,9 @@ TODO: Monitor CPU usage in app, stack information of threads used by high CPU, a
 
   s.source_files = 'MonitorCpuUsage/Classes/**/*'
   
-   s.resource_bundles = {
-     'MonitorCpuUsage' => ['MonitorCpuUsage/Assets/*.png']
-   }
+#  s.resource_bundles = {
+#    'MonitorCpuUsage' => ['MonitorCpuUsage/Assets/*.png']
+#   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
