@@ -33,7 +33,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setLogStatus:(BOOL)logStatus;
 
 /**
- 清楚已经收集的数据
+ 清除已经收集的数据
  */
 - (void)clearMonitorData;
 

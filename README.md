@@ -10,6 +10,8 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+![效果图](https://github.com/HeXiuLian/MonitorCpuUsageProject/blob/master/demo.png)
+
 
 ## Installation
 
@@ -19,6 +21,63 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'MonitorCpuUsage'
 ```
+
+## USAGE
+
+	#import <MonitorCpuUsage/XLMonitorHandle.h>
+	#import <MonitorCpuUsage/XLBrokenLineViewController.h>
+	
+开始监控：
+
+	[[XLMonitorHandle shareInstance] setCpuUsageMax:35];
+    [[XLMonitorHandle shareInstance] startMonitorFpsAndCpuUsage];
+    
+显示折线图：
+
+	XLBrokenLineViewController *eblVC = [[XLBrokenLineViewController alloc] init];
+    [self.navigationController pushViewController:eblVC animated:YES];
+
+
+XLMonitorHandle 常用 API:
+
+```
+///存储监测的数据
+@property (nonatomic, strong) NSMutableArray  *arrMonitorData;
+
++ (instancetype)shareInstance;
+
+/**
+ 开始监测
+ */
+- (void)startMonitorFpsAndCpuUsage;
+
+/**
+ 停止监测
+ */
+- (void)stopMonitor;
+
+/**
+ 是否打印 cpuUsage和fps的值
+ @param logStatus 默认NO
+ */
+- (void)setLogStatus:(BOOL)logStatus;
+
+/**
+ 清除已经收集的数据
+ */
+- (void)clearMonitorData;
+
+/**
+ 设置超过最大cpu使用率的值
+
+ @param UsageMax 最大使用率 默认 90
+ */
+- (void)setCpuUsageMax:(CGFloat)UsageMax;
+
+@end
+
+```
+
 
 ## Author
 
