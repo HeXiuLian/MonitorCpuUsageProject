@@ -1,0 +1,27 @@
+{
+  "name": "MonitorCpuUsage",
+  "version": "0.1.0",
+  "summary": "A short description of MonitorCpuUsage.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/815009254@qq.com/MonitorCpuUsage",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "815009254@qq.com": "xiulian.he@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/815009254@qq.com/MonitorCpuUsage.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MonitorCpuUsage/Classes/**/*",
+  "dependencies": {
+    "iOS-Echarts": [
+
+    ]
+  }
+}

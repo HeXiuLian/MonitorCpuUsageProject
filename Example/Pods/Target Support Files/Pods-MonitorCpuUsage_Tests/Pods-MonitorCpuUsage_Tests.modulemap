@@ -1,0 +1,6 @@
+framework module Pods_MonitorCpuUsage_Tests {
+  umbrella header "Pods-MonitorCpuUsage_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

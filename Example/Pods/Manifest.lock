@@ -1,0 +1,23 @@
+PODS:
+  - iOS-Echarts (1.4.4)
+  - MonitorCpuUsage (0.1.0):
+    - iOS-Echarts
+
+DEPENDENCIES:
+  - MonitorCpuUsage (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - iOS-Echarts
+
+EXTERNAL SOURCES:
+  MonitorCpuUsage:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  iOS-Echarts: dbc7423d861e5eedee78906a39d205b5c4da9a13
+  MonitorCpuUsage: cd43ce2237b2697a69d4558f8bafb2bf4bb18011
+
+PODFILE CHECKSUM: 6852bcb8427b2e4ae15fd86b0428ad52eee16297
+
+COCOAPODS: 1.5.3

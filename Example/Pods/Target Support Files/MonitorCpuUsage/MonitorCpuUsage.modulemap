@@ -1,0 +1,6 @@
+framework module MonitorCpuUsage {
+  umbrella header "MonitorCpuUsage-umbrella.h"
+
+  export *
+  module * { export * }
+}
