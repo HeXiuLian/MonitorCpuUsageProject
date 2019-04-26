@@ -27,7 +27,7 @@
 }
 
 - (void)refreshLine {
-    self.brokenView.arrData = [XLMonitorHandle shareInstance].arrMonitorData;
+    self.brokenView.arrData = [[XLMonitorHandle shareInstance] getCpuUsageData];
 }
 
 - (void)xl_addSubviews {
@@ -36,7 +36,7 @@
 
 - (XLMonitorBrokenLineView *)brokenView {
     if (!_brokenView) {
-        _brokenView  = [[XLMonitorBrokenLineView alloc] initWithFrame:self.view.bounds brokenLineData:[XLMonitorHandle shareInstance].arrMonitorData];
+        _brokenView  = [[XLMonitorBrokenLineView alloc] initWithFrame:self.view.bounds brokenLineData:[[XLMonitorHandle shareInstance] getCpuUsageData]];
     }
     return _brokenView;
 }

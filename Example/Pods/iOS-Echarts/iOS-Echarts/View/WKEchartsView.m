@@ -283,14 +283,14 @@
         __typeof(self) strongSelf = weakSelf;
         if ([result isEqualToString:@"complete"]) {
             strongSelf.finishRender = YES;
-            if (option == nil) {
+            if (self->option == nil) {
                 NSLog(@"Warning: The option is nil.");
                 [strongSelf callJsMethods:@"initEchartView()"];
                 return ;
             }
             [strongSelf resizeDiv];
             
-            NSString *jsonStr = [PYJsonUtil getJSONString:option];
+            NSString *jsonStr = [PYJsonUtil getJSONString:self->option];
             NSString *js;
             PYLog(@"%@",jsonStr);
             

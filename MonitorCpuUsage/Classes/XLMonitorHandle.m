@@ -21,6 +21,9 @@
 @property (nonatomic, assign) BOOL  logStatus;
 
 @property (nonatomic, assign) CGFloat  cpuUsageMax;
+///存储监测的数据
+@property (nonatomic, strong) NSMutableArray  *arrMonitorData;
+
 
 @end
 
@@ -270,5 +273,8 @@
     return _arrMonitorData;
 }
 
+- (NSArray *)getCpuUsageData {
+    return [self.arrMonitorData copy];
+}
 
 @end

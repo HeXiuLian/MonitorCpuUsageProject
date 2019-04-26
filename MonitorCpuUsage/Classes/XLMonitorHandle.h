@@ -11,8 +11,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface XLMonitorHandle : NSObject
-///存储监测的数据
-@property (nonatomic, strong) NSMutableArray  *arrMonitorData;
 
 + (instancetype)shareInstance;
 
@@ -43,6 +41,8 @@ NS_ASSUME_NONNULL_BEGIN
  @param UsageMax 最大使用率 默认 90
  */
 - (void)setCpuUsageMax:(CGFloat)UsageMax;
+
+- (NSArray *)getCpuUsageData;
 
 @end
 

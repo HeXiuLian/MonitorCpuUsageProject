@@ -60,7 +60,7 @@
 /**
  *  Set the option for Echarts
  *
- *  @param option The option of EChart
+ *  @param pyOption The option of EChart
  */
 - (void)setOption:(PYOption *)pyOption;
 

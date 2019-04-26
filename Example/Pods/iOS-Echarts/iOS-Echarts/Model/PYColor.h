@@ -20,7 +20,7 @@
 /**
  *  设置颜色
  *
- *  @param uiColor 颜色
+ *  @param pyColor 颜色
  */
 - (void)setColor:(PY_COLOR *) pyColor;
 
