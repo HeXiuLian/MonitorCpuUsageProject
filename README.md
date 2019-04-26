@@ -78,6 +78,28 @@ XLMonitorHandle 常用 API:
 
 ```
 
+注意：如果曲线图的左右滚动失效，请修改 <iOS-Echarts> 库 PYZoomEchartsView 类的源码如下：
+
+```
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+#if TARGET_OS_IPHONE
+//注释如下代码
+//        UIPinchGestureRecognizer *pinchGesture = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(pinchHandle:)];
+//        [self addGestureRecognizer:pinchGesture];
+//
+//        UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panHandle:)];
+//        [self addGestureRecognizer:panGesture];
+#elif TARGET_OS_MAC
+#endif
+    }
+    return self;
+}
+
+```
+
 
 ## Author
 
